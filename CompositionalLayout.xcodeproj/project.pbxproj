@@ -13,6 +13,8 @@
 		443C2B3327F4750A0064118B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443C2B3127F4750A0064118B /* Main.storyboard */; };
 		443C2B3527F4750D0064118B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443C2B3427F4750D0064118B /* Assets.xcassets */; };
 		443C2B3827F4750D0064118B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443C2B3627F4750D0064118B /* LaunchScreen.storyboard */; };
+		443C2B4527F477A70064118B /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C2B4427F477A70064118B /* ViewController+Ext.swift */; };
+		443C2B4727F479020064118B /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C2B4627F479020064118B /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		443C2B3427F4750D0064118B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443C2B3727F4750D0064118B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443C2B3927F4750D0064118B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443C2B4427F477A70064118B /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		443C2B4627F479020064118B /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		443C2B2A27F4750A0064118B /* CompositionalLayout */ = {
 			isa = PBXGroup;
 			children = (
+				443C2B4327F4777F0064118B /* Extension */,
+				443C2B4227F477700064118B /* Cell */,
 				443C2B3F27F475380064118B /* SupportFiles */,
 				443C2B4027F475630064118B /* Controller */,
 				443C2B4127F475710064118B /* View */,
@@ -89,6 +95,22 @@
 				443C2B3627F4750D0064118B /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		443C2B4227F477700064118B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				443C2B4627F479020064118B /* MyCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		443C2B4327F4777F0064118B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				443C2B4427F477A70064118B /* ViewController+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				443C2B3027F4750A0064118B /* ViewController.swift in Sources */,
+				443C2B4727F479020064118B /* MyCollectionViewCell.swift in Sources */,
 				443C2B2C27F4750A0064118B /* AppDelegate.swift in Sources */,
+				443C2B4527F477A70064118B /* ViewController+Ext.swift in Sources */,
 				443C2B2E27F4750A0064118B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
